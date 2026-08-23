@@ -64,5 +64,20 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Iolyx Therapeutics is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Iolyx Therapeutics, Inc. is a privately held, clinical-stage biopharmaceutical company headquartered in
+Burlingame, California, working at the intersection of immunology and ophthalmology. It develops
+immunomodulatory therapeutics that target ocular inflammation at its source, with lead asset ILYX-002 in
+trials for autoimmune-associated dry eye disease (Phase 2 results announced May 2025; a December 2025
+strategic agreement with Laboratoires Théa to develop and commercialize ILYX-002, plus Series B funding for
+its retinal pipeline). Its stated pipeline spans front-of-eye indications (dry eye, ocular allergy, rosacea,
+uveitis) and back-of-eye indications (age-related macular degeneration, diabetic retinopathy, posterior
+uveitis).
+
+Iolyx is a drug developer, not a software vendor. It publishes no public API, developer portal, SDK, or
+machine-readable specification. Its web presence is a six-page WordPress marketing site; the only
+machine-readable surface on the domain is the stock WordPress REST API discovery document at
+`/wp-json/`, which is a hosting-stack default rather than an API product, and is therefore recorded as an
+observation in `well-known/` rather than registered as an API.
+
+- Website: https://iolyx.com/
+- Harvest source (secondary-market listing venue, not the company's site): https://www.nasdaqprivatemarket.com/

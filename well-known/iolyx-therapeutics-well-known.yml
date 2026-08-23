@@ -1,0 +1,83 @@
+generated: '2026-08-23'
+method: probed
+source: live probes of https://iolyx.com/.well-known/* and https://www.iolyx.com/.well-known/*
+host: https://iolyx.com
+result: none
+note: >-
+  Recorded absence. No /.well-known/ document is served on the Iolyx Therapeutics domain. Every
+  probed path on the apex host returns HTTP 404 rendered as the site's WordPress 404 template (an
+  HTML page, not a document), and the www host answers HTTP 301 to the apex before producing the
+  same 404. Nothing returned a 200 carrying a real document, so no WellKnown and no SecurityTxt
+  pointer is emitted in apis.yml — the pointer would assert that the provider serves that surface,
+  and it does not.
+hosts:
+- host: https://iolyx.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://www.iolyx.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+  - path: /.well-known/openid-configuration
+    status: 301
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+  - path: /.well-known/api-catalog
+    status: 301
+  - path: /.well-known/ai-plugin.json
+    status: 301
+  - path: /.well-known/agent-card.json
+    status: 301
+  - path: /.well-known/agent.json
+    status: 301
+also_probed:
+- path: /openapi.json
+  status: 404
+- path: /swagger.json
+  status: 404
+- path: /api-docs
+  status: 404
+- path: /docs
+  status: 404
+- path: /graphql
+  status: 404
+- path: /llms.txt
+  status: 404
+- path: /robots.txt
+  status: 200
+  note: 'User-Agent: * / Disallow: — nothing is disallowed, so no probe here was refused by policy.'
+- path: /sitemap.xml
+  status: 200
+  note: WordPress core sitemap index; one child sitemap covering six marketing pages.
+- path: /wp-json/
+  status: 200
+  note: >-
+    The only machine-readable surface on the domain is the stock WordPress REST API discovery
+    document (232 routes across 13 namespaces, including wp/v2 and vendor plugin namespaces
+    wpaas/v1, divi/v1, wpforms/v1). This is a content-management default served by the hosting
+    stack, not an API product Iolyx publishes, documents, or offers to consumers — there is no
+    developer portal, reference, or key issuance behind it. Recorded as an observation only; no
+    API entry or OpenAPI pointer is derived from it.
+subdomains_probed:
+- host: api.iolyx.com
+  status: null
+  note: DNS does not resolve.
+- host: developer.iolyx.com
+  status: null
+  note: DNS does not resolve.
+- host: docs.iolyx.com
+  status: null
+  note: DNS does not resolve.

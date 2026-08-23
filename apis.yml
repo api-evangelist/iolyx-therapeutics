@@ -1,17 +1,47 @@
 aid: iolyx-therapeutics
 name: Iolyx Therapeutics
-description: 'Iolyx Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Iolyx Therapeutics, Inc. is a privately held, clinical-stage biopharmaceutical company
+  headquartered in Burlingame, California, working at what it calls the intersection of immunology
+  and ophthalmology — "immuno-ophthalmology". The company develops immunomodulatory therapeutics
+  that target ocular inflammation at its source, using what it describes as innovative pathways and
+  tailored formulations for precise delivery to the relevant ocular tissues, positioned as an
+  alternative to conventional steroids and broad immunosuppressants. Its lead asset, ILYX-002, is in
+  trials for autoimmune-associated dry eye disease; the company announced Phase 2 results in May
+  2025 and, in December 2025, a strategic agreement with Laboratoires Théa to develop and
+  commercialize ILYX-002 alongside Series B funding for its retinal pipeline. The stated pipeline
+  spans front-of-eye indications (dry eye, ocular allergy, rosacea, uveitis) and back-of-eye
+  indications (age-related macular degeneration, diabetic retinopathy, posterior uveitis). Iolyx is a
+  drug developer rather than a software vendor: it operates a six-page WordPress marketing site at
+  iolyx.com and publishes no public API, developer portal, SDK, or machine-readable specification.
 url: https://raw.githubusercontent.com/api-evangelist/iolyx-therapeutics/refs/heads/main/apis.yml
+image: https://iolyx.com/wp-content/uploads/2023/10/iolyx-logo.png
 x-type: company
 x-source: harvest:secondary-market
+x-harvest-listing: https://www.nasdaqprivatemarket.com/
 x-tier: stub
 x-tier-reason: harvest
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-08-23'
 modified: '2026-08-23'
 tags:
 - Company
+- Healthcare
+- Biotechnology
+- Pharmaceuticals
+- Life Sciences
+- Ophthalmology
+- Immunology
+- Clinical Trials
+tags_raw:
+- Company
+- Health Care
+- Biotechnology
+- Pharmaceuticals
+- Life Sciences
+- Ophthalmology
+- Immunology
+- Clinical Trials
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +49,35 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/iolyx-therapeutics-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://iolyx.com/
+x-enrichment:
+  date: '2026-08-23'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Iolyx is a clinical-stage drug developer whose entire web presence is a six-page WordPress
+    marketing site (Home, Pipeline, Team, News, Media, Contact) with zero blog posts, no developer
+    or API section, no GitHub organization, and no package on any public registry — the only
+    machine-readable thing on iolyx.com is the stock WordPress /wp-json/ discovery document the
+    hosting stack serves by default, which is not a product API.
+  evidence:
+  - url: https://iolyx.com/
+    status: 200
+  - url: https://iolyx.com/openapi.json
+    status: 404
+  - url: https://iolyx.com/llms.txt
+    status: 404
+  - url: https://iolyx.com/.well-known/agent-card.json
+    status: 404
+  - url: https://iolyx.com/wp-json/
+    status: 200
+  - url: https://api.github.com/orgs/iolyx-therapeutics
+    status: 404
+  checked: '2026-08-23'
