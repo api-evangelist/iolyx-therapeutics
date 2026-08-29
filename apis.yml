@@ -15,6 +15,17 @@ description: >-
   drug developer rather than a software vendor: it operates a six-page WordPress marketing site at
   iolyx.com and publishes no public API, developer portal, SDK, or machine-readable specification.
 url: https://raw.githubusercontent.com/api-evangelist/iolyx-therapeutics/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://iolyx.com/wp-content/uploads/2023/10/iolyx-logo.png
 x-type: company
 x-source: harvest:secondary-market
