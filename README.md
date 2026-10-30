@@ -64,20 +64,80 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Iolyx Therapeutics, Inc. is a privately held, clinical-stage biopharmaceutical company headquartered in
-Burlingame, California, working at the intersection of immunology and ophthalmology. It develops
-immunomodulatory therapeutics that target ocular inflammation at its source, with lead asset ILYX-002 in
-trials for autoimmune-associated dry eye disease (Phase 2 results announced May 2025; a December 2025
-strategic agreement with Laboratoires Théa to develop and commercialize ILYX-002, plus Series B funding for
-its retinal pipeline). Its stated pipeline spans front-of-eye indications (dry eye, ocular allergy, rosacea,
-uveitis) and back-of-eye indications (age-related macular degeneration, diabetic retinopathy, posterior
-uveitis).
+Iolyx Therapeutics, Inc. is a privately held, clinical-stage biopharmaceutical company headquartered in Burlingame, California, working at what it calls the intersection of immunology and ophthalmology — "immuno-ophthalmology". The company develops immunomodulatory therapeutics that target ocular inflammation at its source, using what it describes as innovative pathways and tailored formulations for precise delivery to the relevant ocular tissues, positioned as an alternative to conventional steroids and broad immunosuppressants. Its lead asset, ILYX-002, is in trials for autoimmune-associated dry eye disease; the company announced Phase 2 results in May 2025 and, in December 2025, a strategic agreement with Laboratoires Théa to develop and commercialize ILYX-002 alongside Series B funding for its retinal pipeline. The stated pipeline spans front-of-eye indications (dry eye, ocular allergy, rosacea, uveitis) and back-of-eye indications (age-related macular degeneration, diabetic retinopathy, posterior uveitis). Iolyx is a drug developer rather than a software vendor: it operates a six-page WordPress marketing site at iolyx.com and publishes no public API, developer portal, SDK, or machine-readable specification.
 
-Iolyx is a drug developer, not a software vendor. It publishes no public API, developer portal, SDK, or
-machine-readable specification. Its web presence is a six-page WordPress marketing site; the only
-machine-readable surface on the domain is the stock WordPress REST API discovery document at
-`/wp-json/`, which is a hosting-stack default rather than an API product, and is therefore recorded as an
-observation in `well-known/` rather than registered as an API.
+**Areas:** Company · Healthcare · Biotechnology · Pharmaceuticals · Life Sciences · Ophthalmology · Immunology · Clinical Trials
 
-- Website: https://iolyx.com/
-- Harvest source (secondary-market listing venue, not the company's site): https://www.nasdaqprivatemarket.com/
+## Iolyx Therapeutics on APIs.io
+
+Everything profiled for Iolyx Therapeutics is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/iolyx-therapeutics/](https://apis.io/providers/iolyx-therapeutics/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Iolyx Therapeutics Domain Security](https://apis.io/security/iolyx-therapeutics/iolyx-therapeutics-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://iolyx.com/)
+- [Blog](https://iolyx.com/news/)
+
+## API Evangelist rating
+
+**Kin Score 4.2** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/iolyx-therapeutics/](https://apis.io/providers/iolyx-therapeutics/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Iolyx Therapeutics: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/iolyx-therapeutics/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
